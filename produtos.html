@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="produtos.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="../Imagens/favicon2.ico">
+        <link rel="stylesheet" href="produtos.css">
+
+        <title>Produtos</title>
+    </head>
+
+    <body>
+
+        <main>
+
+            <div id="container">
+
+                <header id="Cabeçalho">
+
+                    <nav>
+
+                        <div id="logo">
+
+                            <img id="logo_img"
+                            src="../imagens/logo_folha.png"
+                            alt="Logo do site">
+
+                            <div class="logo_texto">
+
+                                <h3>
+                                    <span>Sabor da Terra</span>
+                                </h3>
+
+                                <p>Orgânicos e Artesanais</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="links">
+                            <a href="../index/index.html">Inicio</a>
+                            <a href="../pag_produtos/produtos.html">Produtos</a>
+                            <a href="../pag_contato/contato.html">Contato</a>
+                        </div>
+
+                        <div class="header-direita">
+
+                            <a href="../login/login.html" class="usuario-area" id="userBtn">
+
+                                <div class="usuario">
+                                    <img src="../login/icone_usuario.png" width="30px" alt="Usuário">
+                                </div>
+
+                                <span class="login-link" id="textoUsuario">
+                                    Entre ou cadastre-se
+                                </span>
+
+                                <span class="sair-link" id="btnSair" style="display: none;">
+                                    🚪 Sair
+                                </span>
+
+                            </a>
+
+                            <a href="../pag_pagamento/pagamento.html" class="carrinho-link">
+
+                                <div class="carrinho">
+                                    <img src="../Imagens/Carrinho_compras.png"
+                                        alt="Carrinho">
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </nav>
+
+                </header>
+
+                <section class="bloco_seleção">
+
+                    <h3>Nossa Seleção</h3>
+
+                    <h1>Produtos Frescos</h1>
+
+                    <p>
+                        Descubra nossa selection de produtos frescos e orgânicos,
+                        cultivados com cuidado e dedicação para trazer o melhor sabor da terra.
+                    </p>
+
+                    <div class="selecionar">
+
+                        <button class="categoria ativo"
+                        data-filtro="Todos">
+                            Todos
+                        </button>
+
+                        <button class="categoria"
+                        data-filtro="frutas">
+                            Frutas
+                        </button>
+
+                        <button class="categoria"
+                        data-filtro="verduras">
+                            Verduras
+                        </button>
+
+                        <button class="categoria"
+                        data-filtro="laticinios">
+                            Queijos
+                        </button>
+
+                        <button class="categoria"
+                        data-filtro="pães">
+                            Pães
+                        </button>
+
+                        <button class="categoria"
+                        data-filtro="geleias">
+                            Geleias
+                        </button>
+
+                        <button class="categoria"
+                        data-filtro="destaque">
+                            Destaque do mês
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <section class="bloco_produtos">
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_abacaxi.png" alt="ABACAXI">
+                        <span class="bloco_titulo">ABACAXI PÉROLA</span>
+                        <p>Abacaxi orgânico fresco e selecionado. Tamanho médio 1.2kg.</p>
+                        <span class="preco">
+                            R$ 8,50 <span class="unidade-medida">/Unid</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Abacaxi Pérola (Unid)" data-preco="8.50" data-img="../Frutas/prdt_abacaxi.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_banana.png" alt="Banana">
+                        <span class="bloco_titulo">BANANA PRATA</span>
+                        <p>Bananas maduras e nutritivas, cultivadas sem agrotóxicos.</p>
+                        <span class="preco">
+                            R$ 5,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Banana Prata (1kg)" data-preco="5.99" data-img="../Frutas/prdt_banana.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_laranja.jpg" alt="Laranja">
+                        <span class="bloco_titulo">LARANJA PÊRA</span>
+                        <p>Laranjas frescas e cheias de vitamina C, ideais para sucos naturais.</p>
+                        <span class="preco">
+                            R$ 4,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Laranja Pêra (1kg)" data-preco="4.99" data-img="../Frutas/prdt_laranja.jpg">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_limão.jpg" alt="Limão">
+                        <span class="bloco_titulo">LIMÃO TAITI</span>
+                        <p>Limões verdes selecionados, com aroma intenso e muito suco.</p>
+                        <span class="preco">
+                            R$ 3,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Limão Taiti (1kg)" data-preco="3.99" data-img="../Frutas/prdt_limão.jpg">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_mamão.png" alt="mamão">
+                        <span class="bloco_titulo">MAMÃO FORMOSA</span>
+                        <p>Mamão macio e adocicado, ótimo para uma alimentação saudável.</p>
+                        <span class="preco">
+                            R$ 6,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Mamão Formosa (1kg)" data-preco="6.99" data-img="../Frutas/prdt_mamão.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_maça.png" alt="maçã">
+                        <span class="bloco_titulo">MAÇÃ GALA</span>
+                        <p>Maçãs frescas e crocantes, com sabor suave e equilibrado.</p>
+                        <span class="preco">
+                            R$ 9,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Maçã Gala (1kg)" data-preco="9.99" data-img="../Frutas/prdt_maça.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_melancia.png" alt="Melancia">
+                        <span class="bloco_titulo">MELANCIA BABY</span>
+                        <p>Melancia orgânica menor e mais doce. Peso médio 2kg a 3kg.</p>
+                        <span class="preco">
+                            R$ 3,50 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Melancia Baby (1kg)" data-preco="3.50" data-img="../Frutas/prdt_melancia.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_morango.jpg" alt="Morango">
+                        <span class="bloco_titulo">MORANGO ORGÂNICO</span>
+                        <p>Morangos doces selecionados na bandeja para maior conservação.</p>
+                        <span class="preco">
+                            R$ 15,00 <span class="unidade-medida">/Bandeja 250g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Morango Orgânico (Bandeja 250g)" data-preco="15.00" data-img="../Frutas/prdt_morango.jpg">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="frutas">
+                        <img src="../Frutas/prdt_uva.png" alt="UVA">
+                        <span class="bloco_titulo">UVA THOMPSON</span>
+                        <p>Uvas frescas sem semente, muito doces e suculentas.</p>
+                        <span class="preco">
+                            R$ 12,00 <span class="unidade-medida">/Bandeja 500g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Uva Thompson (Bandeja 500g)" data-preco="12.00" data-img="../Frutas/prdt_uva.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_abobrinha verde.png" alt="ABOBRINHA">
+                        <span class="bloco_titulo">ABOBRINHA VERDE</span>
+                        <p>Abobrinha fresca colhida no dia, ideal para receitas leves.</p>
+                        <span class="preco">
+                            R$ 4,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Abobrinha Verde (1kg)" data-preco="4.99" data-img="../Verduras/prdt_abobrinha verde.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_abóbora.png" alt="abobora">
+                        <span class="bloco_titulo">ABÓBORA CABOTIÁ</span>
+                        <p>Abóbora macia e saborosa, perfeita para caldos e purês.</p>
+                        <span class="preco">
+                            R$ 5,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Abóbora Cabotiá (1kg)" data-preco="5.99" data-img="../Verduras/prdt_abóbora.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_beterraba.png" alt="BETERRABA">
+                        <span class="bloco_titulo">BETERRABA</span>
+                        <p>Beterrabas orgânicas frescas, alto valor nutritivo e muito doces.</p>
+                        <span class="preco">
+                            R$ 4,50 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Beterraba (1kg)" data-preco="4.50" data-img="../Verduras/prdt_beterraba.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_brocolis.png" alt="brocolis">
+                        <span class="bloco_titulo">BRÓCOLIS NINJA</span>
+                        <p>Brócolis frescos de cabeça, ideais para saladas e refogados.</p>
+                        <span class="preco">
+                            R$ 7,50 <span class="unidade-medida">/Unid</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Brócolis Ninja (Unid)" data-preco="7.50" data-img="../Verduras/prdt_brocolis.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_cebola.png" alt="CEBOLA">
+                        <span class="bloco_titulo">CEBOLA</span>
+                        <p>Cebolas orgânicas limpas e selecionadas para os seus temperos.</p>
+                        <span class="preco">
+                            R$ 6,50 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Cebola (1kg)" data-preco="6.50" data-img="../Verduras/prdt_cebola.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_cebolinha.png" alt="cebolinha">
+                        <span class="bloco_titulo">CEBOLINHA FRESCA</span>
+                        <p>Cebolinha orgânica colhida no dia. Aroma incrível para finalizar pratos.</p>
+                        <span class="preco">
+                            R$ 3,00 <span class="unidade-medida">/Maço</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Cebolinha Fresca (Maço)" data-preco="3.00" data-img="../Verduras/prdt_cebolinha.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_cenoura.png" alt="cenoura">
+                        <span class="bloco_titulo">CENOURA</span>
+                        <p>Cenouras orgânicas firmes e crocantes, perfeitas para saladas.</p>
+                        <span class="preco">
+                            R$ 5,50 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Cenoura (1kg)" data-preco="5.50" data-img="../Verduras/prdt_cenoura.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_mandioca.png" alt="MANDIOCA">
+                        <span class="bloco_titulo">MANDIOCA DESCASCADA</span>
+                        <p>Mandioca amarela orgânica, já limpa e embalada a vácuo.</p>
+                        <span class="preco">
+                            R$ 6,00 <span class="unidade-medida">/Pacote 500g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Mandioca Descascada (500g)" data-preco="6.00" data-img="../Verduras/prdt_mandioca.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_pimentão verde.png" alt="pimentao verde">
+                        <span class="bloco_titulo">PIMENTÃO VERDE</span>
+                        <p>Pimentão orgânico limpo e brilhante, livre de agrotóxicos comuns.</p>
+                        <span class="preco">
+                            R$ 7,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Pimentão Verde (1kg)" data-preco="7.99" data-img="../Verduras/prdt_pimentão verde.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="verduras">
+                        <img src="../Verduras/prdt_pimentão vermelho.png" alt="pimentao vermelho">
+                        <span class="bloco_titulo">PIMENTÃO VERMELHO</span>
+                        <p>Pimentão vermelho maturado na roça, mais doce e delicado.</p>
+                        <span class="preco">
+                            R$ 15,99 <span class="unidade-medida">/kg</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Pimentão Vermelho (1kg)" data-preco="15.99" data-img="../Verduras/prdt_pimentão vermelho.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="laticinios">
+                        <img src="../Laticinio/Queijo Artesanal.png" alt="QUEIJO">
+                        <span class="bloco_titulo">QUEIJO ARTESANAL CURADO</span>
+                        <p>Maturado artesanalmente em tábua de madeira. Sabor intenso.</p>
+                        <span class="preco">
+                            R$ 65,00 <span class="unidade-medida">/Peça 500g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Queijo Curado (Peça 500g)" data-preco="65.00" data-img="../Laticinio/Queijo Artesanal.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="laticinios">
+                        <img src="../Laticinio/prdt_requeijão_corte.png" alt="REQUEIJÃO DE CORTE">
+                        <span class="bloco_titulo">REQUEIJÃO DE CORTE</span>
+                        <p>Receita clássica de fazenda. Firme por fora e cremoso por dentro.</p>
+                        <span class="preco">
+                            R$ 22,00 <span class="unidade-medida">/Pote 500g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Requeijão de Corte (500g)" data-preco="22.00" data-img="../Laticinio/prdt_requeijão_corte.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="laticinios">
+                        <img src="../Laticinio/prdt_leite_integral.png" alt="LEITE">
+                        <span class="bloco_titulo">LEITE FRESCO TIPO A</span>
+                        <p>Leite integral de pasto, pasteurizado suavemente. Puro sabor.</p>
+                        <span class="preco">
+                            R$ 7,50 <span class="unidade-medida">/Garrafa 1L</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Leite Tipo A (Garrafa 1L)" data-preco="7.50" data-img="../Laticinio/prdt_leite_integral.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="laticinios">
+                        <img src="../Laticinio/prdt_iorgute_natural.png" alt="IOGURTE NATURAL">
+                        <span class="bloco_titulo">IOGURTE NATURAL</span>
+                        <p>Apenas dois ingredientes: leite fresco e fermento natural.</p>
+                        <span class="preco">
+                            R$ 14,00 <span class="unidade-medida">/Garrafa 1L</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Iogurte Natural (1L)" data-preco="14.00" data-img="../Laticinio/prdt_iorgute_natural.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="laticinios">
+                        <img src="../Laticinio/prdt_docedelite_caseiro.png" alt="DOCE DE LEITE CASEIRO">
+                        <span class="bloco_titulo">DOCE DE LEITE DE FAZENDA</span>
+                        <p>Feito no tacho de cobre artesanalmente, com açúcar reduzido.</p>
+                        <span class="preco">
+                            R$ 25,00 <span class="unidade-medida">/Pote 500g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Doce de Leite Fazenda (500g)" data-preco="25.00" data-img="../Laticinio/prdt_docedelite_caseiro.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="laticinios">
+                        <img src="../Laticinio/prdt_bolodeleite.png" alt="BOLO DE LEITE">
+                        <span class="bloco_titulo">BOLO DE LEITE</span>
+                        <p>Bolo úmido e amanteigado assado no dia da entrega.</p>
+                        <span class="preco">
+                            R$ 35,00 <span class="unidade-medida">/Unid Inteira</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Bolo de Leite (Unid)" data-preco="35.00" data-img="../Laticinio/prdt_bolodeleite.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="laticinios">
+                        <img src="../Laticinio/Manteiga Artesanal.png" alt="manteiga artesanal">
+                        <span class="bloco_titulo">MANTEIGA PURA</span>
+                        <p>Batida com creme de leite fresco. Amarela e super saborosa.</p>
+                        <span class="preco">
+                            R$ 30,00 <span class="unidade-medida">/Pote 500g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Manteiga Pura (500g)" data-preco="30.00" data-img="../Laticinio/Manteiga Artesanal.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="pães">
+                        <img src="../Padaria/prdt_pãointegral.png" alt="PÃO">
+                        <span class="bloco_titulo">PÃO INTEGRAL RÚSTICO</span>
+                        <p>Fermentação natural de 24h, feito com farinha moída na pedra.</p>
+                        <span class="preco">
+                            R$ 14,00 <span class="unidade-medida">/Unid</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Pão Integral Rústico (Unid)" data-preco="14.00" data-img="../Padaria/prdt_pãointegral.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="pães">
+                        <img src="../Padaria/prdt_pãode_queijo.png" alt="PÃO DE QUEIJO">
+                        <span class="bloco_titulo">PÃO DE QUEIJO CONGELADO</span>
+                        <p>Receita original mineira, leva 40% de queijo curado puro.</p>
+                        <span class="preco">
+                            R$ 20,00 <span class="unidade-medida">/Pacote 500g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Pão de Queijo (Pacote 500g)" data-preco="20.00" data-img="../Padaria/prdt_pãode_queijo.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="pães">
+                        <img src="../Padaria/prdt_roscadoce.png" alt="ROSCA DOCE">
+                        <span class="bloco_titulo">ROSCA DOCE COM CREME</span>
+                        <p>Massa brioche fofinha, creme caseiro e um toque de coco ralado.</p>
+                        <span class="preco">
+                            R$ 18,00 <span class="unidade-medida">/Unid</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Rosca Doce (Unid)" data-preco="18.00" data-img="../Padaria/prdt_roscadoce.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="pães">
+                        <img src="../Padaria/prdt_sonho_padaria.png" alt="Sonho">
+                        <span class="bloco_titulo">SONHO DE DOCE DE LEITE</span>
+                        <p>Massa leve de padaria com recheio extra do nosso doce da fazenda.</p>
+                        <span class="preco">
+                            R$ 6,00 <span class="unidade-medida">/Unid</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Sonho de Doce de Leite (Unid)" data-preco="6.00" data-img="../Padaria/prdt_sonho_padaria.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="pães">
+                        <img src="../Padaria/prdt_bolodefubá.png" alt="BOLO DE FUBA">
+                        <span class="bloco_titulo">BOLO DE FUBÁ DA VOVÓ</span>
+                        <p>Clássico caseiro com erva-doce. Leve e perfeito para molhar no café.</p>
+                        <span class="preco">
+                            R$ 25,00 <span class="unidade-medida">/Unid Inteira</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Bolo de Fubá (Unid)" data-preco="25.00" data-img="../Padaria/prdt_bolodefubá.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="pães">
+                        <img src="../Padaria/prdt_broa_fubá.png" alt="BROA DE FUBA">
+                        <span class="bloco_titulo">BROINHA CASCUDINHA</span>
+                        <p>Broa rústica por fora e derretendo por dentro. Sabor de interior.</p>
+                        <span class="preco">
+                            R$ 15,00 <span class="unidade-medida">/Pacote 400g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Broa Cascudinha (Pacote 400g)" data-preco="15.00" data-img="../Padaria/prdt_broa_fubá.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="geleias">
+                        <img src="../Geleias/prdt_geleiademorango.png" alt="GELEIA DE MORANGO">
+                        <span class="bloco_titulo">GELEIA DE MORANGO</span>
+                        <p>Geleia orgânica com pedaços inteiros de fruta. Livre de conservantes.</p>
+                        <span class="preco">
+                            R$ 22,00 <span class="unidade-medida">/Pote 300g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Geleia de Morango (300g)" data-preco="22.00" data-img="../Geleias/prdt_geleiademorango.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="geleias">
+                        <img src="../Geleias/prdt_geleiadefrutasvermelhas.png" alt="GELEIA DE FRUTAS VERMELHAS">
+                        <span class="bloco_titulo">GELEIA FRUTAS VERMELHAS</span>
+                        <p>Blend de morango, amora e mirtilo orgânicos. Equilíbrio azedinho perfeito.</p>
+                        <span class="preco">
+                            R$ 24,00 <span class="unidade-medida">/Pote 300g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Geleia F. Vermelhas (300g)" data-preco="24.00" data-img="../Geleias/prdt_geleiadefrutasvermelhas.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="geleias">
+                        <img src="../Geleias/prdt_geleiademorangocomtamaraechia.png" alt="GELEIA COM CHIA">
+                        <span class="bloco_titulo">GELEIA ZERO AÇÚCAR</span>
+                        <p>Adoçada 100% com tâmaras orgânicas. Leva morango e sementes de chia.</p>
+                        <span class="preco">
+                            R$ 26,00 <span class="unidade-medida">/Pote 300g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Geleia Zero Açúcar (300g)" data-preco="26.00" data-img="../Geleias/prdt_geleiademorangocomtamaraechia.png">Comprar</button>
+                    </div>
+
+                    <div class="produto" data-categoria="geleias">
+                        <img src="../Geleias/prdt_geliadefigo.png" alt="GELEIA DE FIGO">
+                        <span class="bloco_titulo">GELEIA DE FIGO RÚSTICA</span>
+                        <p>Sabor sofisticado, combina perfeitamente bem com nossos queijos curados.</p>
+                        <span class="preco">
+                            R$ 22,00 <span class="unidade-medida">/Pote 300g</span>
+                        </span>
+                        <button class="prdtbotao" data-nome="Geleia de Figo (300g)" data-preco="22.00" data-img="../Geleias/prdt_geliadefigo.png">Comprar</button>
+                    </div>
+
+                    <div class="produto destaque" data-categoria="destaque">
+                        <img src="../Imagens/queijo_e_geleia.png" alt="COMBO DESTAQUE">
+                        <div class="conteudo_destaque">
+                            <span class="bloco_titulo">COMBO DESTAQUE</span>
+                            <p>
+                                A experiência completa: Leve 1 Peça de Queijo Curado (500g) e 1 Geleia de Figo Rústica (300g). 
+                                A combinação perfeita de doce e salgado para impressionar suas visitas.
+                            </p>
+                            <span class="preco">
+                                R$ 75,00 <span class="unidade-medida">/Combo</span>
+                            </span>
+                            <button class="prdtbotao" data-nome="Combo Destaque" data-preco="75.00" data-img="../Imagens/queijo_e_geleia.png">Comprar Combo</button>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+        <div id="rodape">
+            <footer>
+                <section class="footer-col">
+                    <div class="footer-logo-align">
+                        <img src="../Imagens/icone_logo.png" class="icone-logo-principal">
+                        <h2>Sabor da Terra</h2>
+                    </div>
+                    <p>Produtos orgânicos e artesanais direto do campo para sua mesa. Qualidade, frescor e sabor em cada entrega.</p>
+                </section>
+                <section class="footer-col">
+                    <h3>Navegação</h3>
+                    <nav class="footer-nav-list">
+                        <a href="../index/index.html">Início</a>
+                        <a href="../pag_produtos/produtos.html">Produtos</a>
+                        <a href="../pag_contato/contato.html">Contato</a>
+                    </nav>
+                </section>
+                <section class="footer-col">
+                    <h3>Contato</h3>
+                    <div class="contato-item">
+                        <img src="../Imagens/icone_telefone.png" class="icone">
+                        <span>(34) 99176-7274</span>
+                    </div>
+                    <div class="contato-item">
+                        <img src="../pag_contato/icones_contanto/zap (10).png" class="icone">
+                        <span>(34) 99729-5330</span>
+                    </div>
+                    <div class="contato-item">
+                        <img src="../pag_contato/icones_contanto/instagrambege.png" class="icone">
+                        <span>@sabordaterra</span>
+                    </div>
+                </section>
+            </footer>
+
+            <div class="copyright">
+                © 2026 Sabor da Terra — Todos os direitos reservados | Desenvolvido por NexFlow
+            </div>
+        </div>
+
+    </body>
+</html>
